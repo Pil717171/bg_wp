@@ -1,0 +1,148 @@
+.order {
+    min-height: 100vh;
+    overflow: hidden;
+    max-height: 100vh;
+    &-wrapper {
+        position: relative;
+    }
+    &-text {
+        padding-top: 100px;
+        h2 {
+            margin-bottom: 50px;
+        }
+        &-items {
+
+        }
+        &-item {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 32px;
+            & img {
+                margin-right: 30px;
+            }
+        }
+    }
+    &-images {
+        display: flex;
+        flex-direction: row;
+        padding-top: 45px;
+        &-item {
+            min-width: 330px;
+            overflow: hidden;
+            padding-top: 20px;
+            max-height: 500px;
+            & img {
+                position: relative;
+                min-width: 100%;
+                min-height: 100%;
+                object-fit: cover;
+            }
+            &:first-child {
+                margin-right: 20px;
+            }
+            &:last-child {
+                transform: translateY(30px);
+            }
+        }
+
+    }
+    &-bot {
+        margin-top: 60px;
+        background: url('./../images/order_bg.png');
+        height: 50vh;
+        background-size: cover;
+        padding-top: 55px;
+        &-text {
+            &-title {
+                margin-bottom: 50px;
+            }
+            p {
+                margin-bottom: 23px;
+            }
+        }
+        &-form {
+            display: flex;
+            flex-direction: column;
+            &-item {
+                margin-bottom: 24px;
+            }
+            &-label {
+                & p {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #D8D8D8;
+                    margin-bottom: 8px;
+                }
+            }
+            &-input {
+                & input {
+                    width: 352px;
+                    height: 48px;
+                    border: 2px solid #D8D8D8;
+                    box-sizing: border-box;
+                    border-radius: 24px;
+                    background: transparent;
+                    padding-left: 16px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #D8D8D8;
+                }
+            } 
+            &-button {
+                position: relative;
+                &-but {
+                    background: linear-gradient(180deg, #C69C6D 0%, #D39F64 100%);
+                    border-radius: 32px;
+                    width: 159px;
+                    height: 37px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 19px;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    letter-spacing: -0.8px;
+                    color: #333333;
+                    margin-left: 96px;
+                    cursor: pointer;    
+                    position: relative;
+                    z-index: 2;
+                    outline: none;
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: linear-gradient(180deg, rgba(198, 156, 109, 0.5) 0%, rgba(211, 159, 100, 0.5) 100%);
+                    filter: blur(50px);
+                    border-radius: 32px;
+                    margin-left: 96px;
+                    width: 159px;
+                    height: 37px;
+                    position: absolute;
+                    opacity: 0.5;
+                    transition: 0.3s;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+                &-blur {
+                    
+                }
+
+            }
+        }
+    }
+}

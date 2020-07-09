@@ -1,0 +1,143 @@
+@import "fonts.scss";
+@import "hero";
+@import "grid";
+@import "menu";
+@import "offer.scss";
+@import "order";
+@import "steps";
+@import "example";
+@import "comment.scss";
+@import "contact.scss";
+
+
+
+// Default
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+// Links
+a {
+  text-decoration: none;
+  &:active, &:hover {
+    outline: 0;
+  }
+}
+
+// List
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+// Headlines
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; }
+
+// Default
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: border-box; }
+:focus { outline: 0; }
+
+img, audio, video { max-width: 100%; height: auto; }
+audio, canvas, iframe, video, img, svg { vertical-align: middle; }
+iframe { border: 0 }
+
+// From
+textarea {
+  resize: none; /*remove the resize handle on the bottom right*/
+  overflow: auto;
+  vertical-align: top;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+input, textarea, select, button { outline: none; border: none; font-size: 100%; margin: 0;}
+button, input { line-height: normal; }
+
+// Table
+table { border-collapse: collapse; border-spacing: 0; }
+td, th { padding: 0; text-align: left; }
+
+p {
+    font-family: Roboto;
+    font-weight: 400;
+    color: #EBE6E2;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin-bottom: 0;
+    &.white-text {
+        color: #D8D8D8;
+    }
+}
+
+h1 {
+    font-family: Tenor Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #C69C6D;
+}
+
+h2 {
+    font-family: Tenor Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    color: #C69C6D;
+}
+
+h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #EBE6E2;
+}
+
+a {
+    text-decoration: none;
+    color: #EBE6E2;;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.body-wrapper {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.wpcf7-response-output {
+  display: none !important;
+}

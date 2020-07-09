@@ -1,0 +1,76 @@
+include ./mixins.pug
+
+section.steps
+    +grid('grid-order', '04')
+    .container
+        .steps-wrapper
+            .row
+                .col-sm-12
+                    h2 5 Шагов от идеи до воплощения
+            .row.steps-items
+                .col-lg-4
+                    .steps-item
+                        .steps-item-border
+                            svg(width='342' height='268' viewbox='0 0 342 268' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                path(d='M0.25 40C0.25 18.0467 18.0467 0.25 40 0.25H280.143C282.031 0.25 283.739 1.36767 284.496 3.09718L340.895 132.097C341.426 133.31 341.426 134.69 340.895 135.903L284.496 264.903C283.739 266.632 282.031 267.75 280.143 267.75H40C18.0467 267.75 0.25 249.953 0.25 228V40Z' stroke='#493D30' stroke-width='0.5')
+                        .steps-item-num 1
+                        .steps-item-content
+                            .steps-item-content-title
+                                h3 Заявка или звонок
+                            .steps-item-content-text
+                                p Вы оставляете заявку на сайте или звоните нам
+                                p.steps-item-content-text-phones     
+                                    | + 375 44 514-44-05 
+                                    br 
+                                    | + 375 29 514-44-05
+                            .steps-item-content-button
+                                .steps-item-content-button-blur
+                                .steps-item-content-button-block Оставить заявку
+                .col-lg-4
+                    .steps-item
+                        .steps-item-border
+                            svg(width='342' height='268' viewbox='0 0 342 268' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                path(d='M0.25 40C0.25 18.0467 18.0467 0.25 40 0.25H280.143C282.031 0.25 283.739 1.36767 284.496 3.09718L340.895 132.097C341.426 133.31 341.426 134.69 340.895 135.903L284.496 264.903C283.739 266.632 282.031 267.75 280.143 267.75H40C18.0467 267.75 0.25 249.953 0.25 228V40Z' stroke='#493D30' stroke-width='0.5')
+                        .steps-item-num 2
+                        .steps-item-content
+                            .steps-item-content-title
+                                h3 Выезд замерщика
+                            .steps-item-content-text
+                                p Наш замерщик приедет к Вам и произведет бесплатный замер с учетом ваших пожеланий
+                .col-lg-4
+                    .steps-item
+                        .steps-item-border
+                            svg(width='342' height='268' viewbox='0 0 342 268' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                path(d='M0.25 40C0.25 18.0467 18.0467 0.25 40 0.25H280.143C282.031 0.25 283.739 1.36767 284.496 3.09718L340.895 132.097C341.426 133.31 341.426 134.69 340.895 135.903L284.496 264.903C283.739 266.632 282.031 267.75 280.143 267.75H40C18.0467 267.75 0.25 249.953 0.25 228V40Z' stroke='#493D30' stroke-width='0.5')
+                        .steps-item-num 3
+                        .steps-item-content
+                            .steps-item-content-title
+                                h3 Заключение договора
+                            .steps-item-content-text
+                                p Заключается договор с указанием сроков и стоимости изготовления мебели
+                .col-lg-4.offset-lg-2
+                    .steps-item
+                        .steps-item-border
+                            svg(width='342' height='268' viewbox='0 0 342 268' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                path(d='M0.25 40C0.25 18.0467 18.0467 0.25 40 0.25H280.143C282.031 0.25 283.739 1.36767 284.496 3.09718L340.895 132.097C341.426 133.31 341.426 134.69 340.895 135.903L284.496 264.903C283.739 266.632 282.031 267.75 280.143 267.75H40C18.0467 267.75 0.25 249.953 0.25 228V40Z' stroke='#493D30' stroke-width='0.5')
+                        .steps-item-num 4
+                        .steps-item-content
+                            .steps-item-content-title
+                                h3 Изготовление заказа
+                            .steps-item-content-text
+                                p Ваша мебель изготавливается. Используются современные материалы и технологии
+                .col-lg-4
+                    .steps-item
+                        .steps-item
+                            .steps-item-border
+                                svg(width='342' height='269' viewbox='0 0 342 269' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                    path(d='M0.25 40C0.25 18.0467 18.0467 0.25 40 0.25H302C323.953 0.25 341.75 18.0467 341.75 40V229C341.75 250.953 323.953 268.75 302 268.75H40C18.0467 268.75 0.25 250.953 0.25 229V40Z' stroke='#493D30' stroke-width='0.5')
+                            .steps-item-num 5
+                            .steps-item-content
+                                .steps-item-content-title
+                                    h3 Доставка и установка
+                                .steps-item-content-text
+                                    p Мы бесплатно доставим Вашу мебель в срок, в целости и сохранности. Произведем качественную и надежную сборку мебели с подгоном вплоть до 1 мм
+                
+            .hamburger
+                    .hamburger-block

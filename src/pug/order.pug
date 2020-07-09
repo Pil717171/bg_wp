@@ -1,0 +1,64 @@
+include ./mixins.pug
+
+section.order
+    +grid('grid-order', '03')
+    .container
+        .order-wrapper
+            .row
+                .col-lg-5
+                    .order-text
+                        h2 Заказывая мебель у нас, Вы получаете
+                        .order-text-items
+                            .order-text-item
+                                .orer-text-item-img
+                                    img(src="./images/order_1.svg", alt="")
+                                .orer-text-item-text
+                                    p Бесплатную сборку и установку
+                            .order-text-item
+                                .orer-text-item-img
+                                    img(src="./images/order_2.svg", alt="")
+                                .orer-text-item-text
+                                    p Бесплатную доставку
+                            .order-text-item
+                                .orer-text-item-img
+                                    img(src="./images/order_3.svg", alt="")
+                                .orer-text-item-text
+                                    p Бесплатный выезд на замер и консультацию
+                            .order-text-item
+                                .orer-text-item-img
+                                    img(src="./images/order_4.svg", alt="")
+                                .orer-text-item-text
+                                    p Возможность оплаты в рассрочку до 6 месяцев, без процентов
+                .col-lg-6.offset-lg-1
+                    .order-images
+                        .order-images-item
+                            img(src="./images/order_img_1.jpg", alt="")
+                        .order-images-item
+                            img(src="./images/order_img_2.jpg", alt="")
+            .hamburger
+                .hamburger-block
+    .order-bot
+        .container 
+            .row
+                .col-lg-6
+                    .order-bot-text
+                        .order-bot-text-title
+                            h2 Перезвонить Вам
+                        .order-bot-text-items
+                            p.white-text Или Вы хотите расчитать стоимость?
+                            p.white-text Оставьте заявку и мы свяжемся с Вами в кротчайшие сроки
+                .col-lg-6
+                    .order-bot-form
+                        form(action="")
+                            .order-bot-form-item
+                                .order-bot-form-label 
+                                    p Номер телефона
+                                .order-bot-form-input   
+                                    input(type="tel", name="")
+                            .order-bot-form-item
+                                .order-bot-form-label 
+                                    p Имя
+                                .order-bot-form-input   
+                                    input(type="text", name="")
+                            .order-bot-form-button
+                                button(type="") Отправить заявку

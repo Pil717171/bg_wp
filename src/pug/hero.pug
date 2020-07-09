@@ -1,0 +1,87 @@
+include ./mixins.pug
+
+section.hero
+    .hero-scroll
+            .hero-scroll-block
+                img(src="./images/scroll.svg", alt="scroll")
+    +grid('grid-hero', '01')
+    .hero-grid
+    .container
+        .hero-header
+            .row
+                .col-lg-3.hero-logo
+                    a(href="#")
+                        img(src="images/logo.svg", alt="big-city")
+                .col-lg-3.hero-marker
+                    .hero-marker-img
+                        img(src="images/marker.svg", alt="marker")
+                    .hero-marker-text 
+                        a(href="#")
+                            p 
+                                |г. Гродно
+                                br 
+                                |Гродненская область
+                .col-lg-6
+                    .row
+                        .col-lg-5.hero-phone
+                            .hero-phone-img
+                                img(src="images/phone.svg", alt="marker")
+                            .hero-phone-text
+                                .hero-phone-text-item 
+                                    a(href="tel:+375298444405") 
+                                        p + 375 29 844-44-05
+                                .hero-phone-text-item
+                                    a(href="tel:+375448444405") 
+                                        p + 375 44 844-44-05
+                        .col-lg-7.hero-button
+                            a(href="#")
+                                .hero-button-blur
+                                .hero-button-button Заказать звонок
+            .hamburger
+                .hamburger-block
+        .hero-content
+            .row
+                .col-lg-6.hero-content-text-wrapper
+                    .hero-content-text
+                        .hero-content-text-title
+                            h1 Изготовление мебели на заказ
+                        .hero-content-text-button
+                            .hero-content-text-button-blur
+                            button Заказать
+                .col-lg-6.hero-content-slider-wrapper
+                    .hero-content-slider
+                        .hero-content-slider-item
+                            p Кухни
+                            img(src="./images/slider_1.jpg", alt="")
+                        .hero-content-slider-item
+                            p Корпусная мебель
+                            img(src="./images/slider_4.jpg", alt="")
+                        .hero-content-slider-item
+                            p Перегородки
+                            img(src="./images/slider_3.jpg", alt="")
+                        .hero-content-slider-item
+                            p Шкафы-купе
+                            img(src="./images/slider_2.jpg", alt="")
+                    .hero-content-slider-buttons
+                        .hero-content-slider-buttons-prev
+                            img(src="./images/slider_prev.svg", alt="prev")
+                        .hero-content-slider-buttons-next.active
+                            img(src="./images/slider_next.svg", alt="next")
+        .hero-pods
+            .row
+                .col-lg-3
+                    .hero-pods-item
+                        .hero-pods-item-line
+                        .hero-pods-item-text Собственное производство
+                .col-lg-3
+                    .hero-pods-item
+                        .hero-pods-item-line
+                        .hero-pods-item-text Бесплатная установка и доставка
+                .col-lg-3
+                    .hero-pods-item
+                        .hero-pods-item-line
+                        .hero-pods-item-text Рассрочка до 6 месяцев
+                .col-lg-3
+                    .hero-pods-item
+                        .hero-pods-item-line
+                        .hero-pods-item-text Более 5 лет на рынке    
