@@ -63,6 +63,13 @@
             }
         }
     }
+    @media(max-width: 991px) {
+        position: relative;
+        top: auto;
+        &-block {
+            
+        }
+    }
 }
 
 .menu {

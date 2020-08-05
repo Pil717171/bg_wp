@@ -141,3 +141,13 @@ body {
 .wpcf7-response-output {
   display: none !important;
 }
+
+@media(max-width: 991px) {
+  body {
+    height: auto;
+    overflow: auto;
+  }
+  .body-wrapper {
+    height: auto;
+  }
+}

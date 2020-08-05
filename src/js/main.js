@@ -60,12 +60,21 @@ function initSliders() {
 
 window.addEventListener('load', function () {
     siteNavigation();
-    
 });
 
 
 
 function siteNavigation() {
+
+    menuBehavior()
+    
+    if(document.body.clientWidth > 991) {
+        
+        renderPage(0)
+        changeCountToWhell()
+        changeCountToClick()
+    }
+    
     let count = 0;
     let newCount;
     let inProgress = false;
@@ -151,10 +160,7 @@ function siteNavigation() {
     }
 
 
-    menuBehavior()
-    renderPage(0)
-    changeCountToWhell()
-    changeCountToClick()
+    
     
 }
 
