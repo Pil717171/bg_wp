@@ -153,4 +153,38 @@
             }
         }
     }
+    @media (max-width: 992px) {
+        max-height: none;
+        padding-bottom: 40px;
+        h2 {
+            margin-top: 40px;
+        }
+        & .slick-slide {
+            min-width: auto;
+        }
+        &-slide {
+            margin-left: 5px;
+            margin-right: 5px;
+            &-text {
+                padding-top: 20px;
+                &-title {
+                    text-align: center;
+                }
+            }
+        }
+        &-slider {
+            margin-top: 80px;
+            &-arrows {
+                margin-top: 32px;
+                justify-content: center;
+                div {
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+            }
+        }
+        .hamburger {
+            display: none;
+        }
+    }
 }

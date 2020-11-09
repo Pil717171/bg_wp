@@ -129,4 +129,39 @@
             }
         }
     }
+    @media (max-width: 992px) {
+        height: auto;
+        & h2 {
+            margin-top: 40px;
+        }
+        & .hamburger {
+            display: none;
+        }
+        &-items {
+            margin-top: 30px;
+        }
+        &-item {
+            justify-content: center;
+            &-border {
+                transform: rotate(90deg);
+                top: auto;
+                left: auto;
+            }
+            &-num {
+                width: 34px;
+                height: 34px;
+                min-width: auto;
+            }
+            &-content {
+                &-text {
+                    p {
+                        max-width: 200px;
+                    }
+                    h3 {
+                        max-width: 200px;
+                    }
+                }
+            }
+        }
+    }
 }

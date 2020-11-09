@@ -84,9 +84,42 @@
                                 <div class="hero-content-text-title">
                                     <h1>Изготовление мебели на заказ</h1>
                                 </div>
+                                <div class="hero-content-text-text">
+                                    <p>Создаем кухни, Шкафы-купе, Перегородки и другую корпусную мебель по выгодным ценам</p>
+                                </div>
                                 <div class="hero-content-text-button">
                                     <div class="hero-content-text-button-blur"></div>
                                     <button>Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 d-lg-none">
+                            <div class="hero-pods">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="hero-pods-item">
+                                            <div class="hero-pods-item-line"></div>
+                                            <div class="hero-pods-item-text">Собственное производство</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="hero-pods-item">
+                                            <div class="hero-pods-item-line"></div>
+                                            <div class="hero-pods-item-text">Бесплатная установка и доставка</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="hero-pods-item">
+                                            <div class="hero-pods-item-line"></div>
+                                            <div class="hero-pods-item-text">Рассрочка до 6 месяцев</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="hero-pods-item">
+                                            <div class="hero-pods-item-line"></div>
+                                            <div class="hero-pods-item-text">Более 5 лет на рынке </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -115,7 +148,7 @@
                     </div>
                 </div>
                 <div class="hero-pods">
-                    <div class="row">
+                    <div class="row d-none d-lg-flex">
                         <div class="col-lg-3">
                             <div class="hero-pods-item">
                                 <div class="hero-pods-item-line"></div>
@@ -172,14 +205,14 @@
             <div class="container">
                 <div class="offer-wrapper">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 order-sm-2 order-lg-1">
                             <div class="offer-slider">
                                 <div class="offer-slider-item"><img src="<?php echo get_stylesheet_directory_uri()?>/build/images/offer_slider_1.jpg" alt=""></div>
                                 <div class="offer-slider-item"><img src="<?php echo get_stylesheet_directory_uri()?>/build/images/offer_slider_2.jpg" alt=""></div>
                                 <div class="offer-slider-item"><img src="<?php echo get_stylesheet_directory_uri()?>/build/images/offer_slider_3.jpg" alt=""></div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 order-sm-1">
                             <div class="offer-content">
                                 <div class="offer-content-title">
                                     <h2>Мебельная компания BigCity мебель рада предложить Вам качественную мебель по
@@ -691,13 +724,13 @@
             <div class="contact-bottom">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-3">
+                        <div class="col-6 col-lg-3">
                             <div class="contact-bottom-left"> <img src="<?php echo get_stylesheet_directory_uri()?>/build/images/logo.svg" alt="">
                                 <p><?php echo getMain()['name'] ?></p>
                                 <p class="contact-bottom-left-reg"> <span>Свидетельство о регистрации</span></p>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-6 col-lg-3">
                             <div class="contact-bottom-center">
                                 <div class="contact-bottom-center-title">
                                     <h4>Контакты</h4>
@@ -715,7 +748,7 @@
                                     </div>
                                     <div class="contact-bottom-center-phone-text">
                                         <p>
-                                        <?php echo getMain()['phone_1'] ?><br><?php echo getMain()['phone_2'] ?></p>
+                                        <?php echo getMain()['phone_1'] ?><br><br><?php echo getMain()['phone_2'] ?></p>
                                     </div>
                                 </div>
                                 <div class="contact-bottom-center-social"><a href="<?php echo getMain()['instagramm_link'] ?>" target="_blank"

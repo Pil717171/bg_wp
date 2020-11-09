@@ -175,6 +175,52 @@
                 margin-bottom: 15px;
             }
         }
-
+    }
+    @media (max-width: 992px) {
+        &-top {
+            height: auto;
+            padding: 40px 0;
+            &-content {
+                &-title {
+                    margin-bottom: 50px;
+                }
+            }
+        }
+        &-center {
+            height: auto;
+            &-images {
+                flex-wrap: wrap;
+                justify-content: center;
+                img {
+                    margin: 12px;
+                }
+            }
+        }
+        &-bottom {
+            height: auto;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            &-left {
+                img {
+                    height: 40px;
+                }
+                p {
+                    font-size: 10px;
+                    line-height: 12px;
+                }
+            }
+            &-center {
+                p {
+                    font-size: 10px;
+                    line-height: 12px;
+                }
+            }
+            &-right {
+                margin-top: 20px;
+            }
+        }
+        .hamburger {
+            display: none;
+        }
     }
 }

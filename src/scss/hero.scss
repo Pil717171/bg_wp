@@ -94,7 +94,7 @@
             border-radius: 32px;
             width: 159px;
             height: 37px;
-            font-family: Roboto;
+            font-family: 'Roboto';
             font-style: normal;
             font-weight: normal;
             font-size: 16px;
@@ -120,6 +120,15 @@
                 align-items: center;
             }
             &-title {
+                margin-bottom: 70px;
+            }
+            &-text p {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 28px;
+                color: #EBE6E2;
                 margin-bottom: 70px;
             }
             &-button {
@@ -268,6 +277,9 @@
         }
     }
     @media(max-width: 991px) {
+        &-scroll {
+            display: none;
+        }
         &-marker {
             display: none;
         }
@@ -294,6 +306,82 @@
             justify-content: space-between;
             align-items: center;
 
+        }
+        &-content {
+            margin-bottom: 50px;
+            &-text {
+                h1 {
+                    font-size: 32px;
+                    line-height: 37px;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+                &-button {
+                    &-blur {
+                        font-size: 14px;
+                        line-height: 24px;
+                        width: 149px;
+                        height: 40px;
+                    }
+                    button {
+                        font-size: 14px;
+                        line-height: 15px;
+                        width: 149px;
+                        height: 40px;
+                    }
+                }
+                &-title {
+                    margin-bottom: 46px;
+                }
+                &-text {
+                    p {
+                        margin-bottom: 46px;
+                    }
+                }
+            }
+            &-slider {
+                &-wrapper {
+                    right: 0;
+                    img {
+                        height: auto;
+                        max-width: 100%;
+                    }
+                }
+                &-item {
+                    min-height: auto;
+                    p {
+                        bottom: 6px;
+                        left: 6px;
+                    }
+                }
+                &-buttons {
+                    margin-left: 0;
+                    margin-top: 35px;
+                    justify-content: center;
+                }
+                & .slick-slide {
+                    margin-right: 10px;
+                    margin-left: 10px;
+                }
+            }
+        }
+        &-pods {
+            margin-top: 60px;
+            margin-bottom: 35px;
+            &-item {
+                font-size: 16px;
+                line-height: 19px;
+                margin-bottom: 34px;
+                &-line {
+                    height: auto;
+                }
+                &-text {
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+            }
         }
     }
 }

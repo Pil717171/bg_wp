@@ -51,7 +51,7 @@
         background: url('./../images/order_bg.png');
         height: 50vh;
         background-size: cover;
-        padding-top: 55px;
+        padding-top: 35px;
         &-text {
             &-title {
                 margin-bottom: 50px;
@@ -64,7 +64,7 @@
             display: flex;
             flex-direction: column;
             &-item {
-                margin-bottom: 24px;
+                margin-bottom: 10px;
             }
             &-label {
                 & p {
@@ -95,6 +95,7 @@
                 }
             } 
             &-button {
+                margin-top: 30px;
                 position: relative;
                 &-but {
                     background: linear-gradient(180deg, #C69C6D 0%, #D39F64 100%);
@@ -142,6 +143,34 @@
                     
                 }
 
+            }
+        }
+    }
+    @media (max-width: 992px) {
+        max-height: none;
+        &-text {
+            padding-top: 40px;
+            h2 {
+                margin-bottom: 40px;
+            }
+            &-item {
+                margin-bottom: 16px;
+                &-img {}
+            }
+        }
+        &-images {
+            padding-top: 0;
+            &-item {
+                min-width: 130px;
+            }
+        }
+        .hamburger {
+            display: none;
+        }
+        &-bot {
+            height: auto;
+            &-form {
+                align-items: center;
             }
         }
     }

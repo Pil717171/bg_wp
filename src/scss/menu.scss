@@ -66,8 +66,20 @@
     @media(max-width: 991px) {
         position: relative;
         top: auto;
+        width: 37px;
         &-block {
-            
+            &:before {
+                top: 9px;
+            }
+            &:after {
+                top: 18px;
+            }
+            &.open {
+                top: 20px;
+                &:before {
+                    top: 5px;
+                }
+            }
         }
     }
 }
@@ -125,7 +137,6 @@
             transform: rotate(-90deg);
         }
         &-text {
-            
             font-family: Tenor Sans;
             font-style: normal;
             font-weight: normal;
@@ -151,6 +162,29 @@
         margin-top: 25px;
         a {
             margin-right: 10px;
+        }
+    }
+    @media(max-width: 991px) {
+        &-items {
+            padding-top: 78px;
+        }
+        &-item {
+            &-text {
+                margin-left: 0;
+                svg {
+                    height: 23px;
+                    width: auto;
+                }
+            }
+            &-num {
+                display: none;
+            }
+        }
+        &.open {
+            & .hamburger {
+                position: absolute;
+                right: 0;
+            }
         }
     }
 

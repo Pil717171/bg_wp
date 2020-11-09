@@ -42,8 +42,16 @@ function initSliders() {
             centerMode: true,
             prevArrow: document.querySelector('.example-slider-buttons-prev'),
             nextArrow: document.querySelector('.example-slider-buttons-next'),
-            }
-        );
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
         $('.example-slider').slick('slickGoTo', 2,  true);
 
         $('.comment-slider').slick({
@@ -52,6 +60,15 @@ function initSliders() {
             centerMode: true,
             prevArrow: document.querySelector('.comment-slider-arrows-prev'),
             nextArrow: document.querySelector('.comment-slider-arrows-next'),
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
             }
         );
     });
@@ -68,13 +85,6 @@ function siteNavigation() {
 
     menuBehavior()
     
-    if(document.body.clientWidth > 991) {
-        
-        renderPage(0)
-        changeCountToWhell()
-        changeCountToClick()
-    }
-    
     let count = 0;
     let newCount;
     let inProgress = false;
@@ -85,14 +95,21 @@ function siteNavigation() {
     let menuItems = Array.prototype.slice.call(document.querySelectorAll('.menu-item'));
 
 
+    if(document.body.clientWidth > 991) {
+        
+        renderPage(0)
+        changeCountToWhell()
+        changeCountToClick()
 
-    menuItems.forEach((item) => {
-        item.addEventListener('click', (e) => {
-            count = item.getAttribute('data-num');
-            window.dispatchEvent(changeCountEvent);
-            menuSection.classList.remove('open')
+        menuItems.forEach((item) => {
+            item.addEventListener('click', (e) => {
+                count = item.getAttribute('data-num');
+                window.dispatchEvent(changeCountEvent);
+                menuSection.classList.remove('open')
+            })
         })
-    })
+    }
+   
 
     window.addEventListener('changeCount', (e) => {
         renderPage(count)
