@@ -90,6 +90,10 @@ p {
     }
 }
 
+section {
+    transform: scale(0.5);
+}
+
 h1 {
     font-family: Tenor Sans;
     font-style: normal;
@@ -137,6 +141,9 @@ body {
     overflow: hidden;
     scroll-behavior: smooth;
 }
+.mobile-show {
+  display: none;
+}
 
 .wpcf7-response-output {
   display: none !important;
@@ -160,5 +167,8 @@ body {
   h3 {
     font-size: 16px;
     line-height: 19px;
+  }
+  .mobile-show {
+    display: block;
   }
 }

@@ -74,6 +74,7 @@
                 justify-content: center;
                 color: #C69C6D;
                 margin-bottom: 15px;
+                text-align: center;
             }
             &-text {
                 font-family: Roboto;
@@ -153,6 +154,16 @@
             }
         }
     }
+    @media (max-width: 1400px) {
+        .slick-slide {
+            min-width: 270px;
+        }
+        &-slide {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+
     @media (max-width: 992px) {
         max-height: none;
         padding-bottom: 40px;

@@ -155,7 +155,10 @@
             }
             &-item {
                 margin-bottom: 16px;
-                &-img {}
+                &-img {
+                    width: 60px;
+                    min-width: 60px;
+                }
             }
         }
         &-images {
@@ -174,4 +177,11 @@
             }
         }
     }
+}
+
+.disabled {
+    cursor: not-allowed !important;
+    pointer-events: none;
+    opacity: 0.3;
+    transition: 0.5s;
 }

@@ -66,7 +66,7 @@
                                             </a></div>
                                     </div>
                                 </div>
-                                <div class="col-lg-7 hero-button"><a href="#">
+                                <div class="col-lg-7 hero-button"><a class="call-button" href="#">
                                         <div class="hero-button-blur"></div>
                                         <div class="hero-button-button">Заказать звонок</div>
                                     </a></div>
@@ -87,7 +87,7 @@
                                 <div class="hero-content-text-text">
                                     <p>Создаем кухни, Шкафы-купе, Перегородки и другую корпусную мебель по выгодным ценам</p>
                                 </div>
-                                <div class="hero-content-text-button">
+                                <div class="hero-content-text-button call-button">
                                     <div class="hero-content-text-button-blur"></div>
                                     <button>Заказать</button>
                                 </div>
@@ -278,26 +278,26 @@
                                 <h2>Заказывая мебель у нас, Вы получаете</h2>
                                 <div class="order-text-items">
                                     <div class="order-text-item">
-                                        <div class="orer-text-item-img"><img src="<?php echo get_stylesheet_directory_uri()?>/build/images/order_1.svg" alt=""></div>
-                                        <div class="orer-text-item-text">
+                                        <div class="order-text-item-img"><img src="<?php echo get_stylesheet_directory_uri()?>/build/images/order_1.svg" alt=""></div>
+                                        <div class="order-text-item-text">
                                             <p>Бесплатную сборку и установку</p>
                                         </div>
                                     </div>
                                     <div class="order-text-item">
-                                        <div class="orer-text-item-img"><img src="<?php echo get_stylesheet_directory_uri()?>/build/images/order_2.svg" alt=""></div>
-                                        <div class="orer-text-item-text">
+                                        <div class="order-text-item-img"><img src="<?php echo get_stylesheet_directory_uri()?>/build/images/order_2.svg" alt=""></div>
+                                        <div class="order-text-item-text">
                                             <p>Бесплатную доставку</p>
                                         </div>
                                     </div>
                                     <div class="order-text-item">
-                                        <div class="orer-text-item-img"><img src="<?php echo get_stylesheet_directory_uri()?>/build/images/order_3.svg" alt=""></div>
-                                        <div class="orer-text-item-text">
+                                        <div class="order-text-item-img"><img src="<?php echo get_stylesheet_directory_uri()?>/build/images/order_3.svg" alt=""></div>
+                                        <div class="order-text-item-text">
                                             <p>Бесплатный выезд на замер и консультацию</p>
                                         </div>
                                     </div>
                                     <div class="order-text-item">
-                                        <div class="orer-text-item-img"><img src="<?php echo get_stylesheet_directory_uri()?>/build/images/order_4.svg" alt=""></div>
-                                        <div class="orer-text-item-text">
+                                        <div class="order-text-item-img"><img src="<?php echo get_stylesheet_directory_uri()?>/build/images/order_4.svg" alt=""></div>
+                                        <div class="order-text-item-text">
                                             <p>Возможность оплаты в рассрочку до 6 месяцев, без процентов</p>
                                         </div>
                                     </div>
@@ -396,7 +396,7 @@
                         <div class="col-lg-4">
                             <div class="steps-item">
                                 <div class="steps-item-border">
-                                    <svg width="342" height="268" viewbox="0 0 342 268" fill="none"
+                                    <svg height="268" viewbox="0 0 342 268" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M0.25 40C0.25 18.0467 18.0467 0.25 40 0.25H280.143C282.031 0.25 283.739 1.36767 284.496 3.09718L340.895 132.097C341.426 133.31 341.426 134.69 340.895 135.903L284.496 264.903C283.739 266.632 282.031 267.75 280.143 267.75H40C18.0467 267.75 0.25 249.953 0.25 228V40Z"
@@ -413,7 +413,7 @@
                                         <p class="steps-item-content-text-phones">
                                             + 375 44 514-44-05 <br>+ 375 29 514-44-05</p>
                                     </div>
-                                    <div class="steps-item-content-button">
+                                    <div class="steps-item-content-button call-button">
                                         <div class="steps-item-content-button-blur"></div>
                                         <div class="steps-item-content-button-block">Оставить заявку</div>
                                     </div>
@@ -643,10 +643,10 @@
                     </div>
                 </div>
             </div>
-            <div class="comment-button">
+            <!-- <div class="comment-button">
                 <div class="comment-button-blur"></div>
                 <div class="comment-button-button">Оставить комментарий </div>
-            </div>
+            </div> -->
         </section>
         <section class="contact">
             <div class="grid">
@@ -705,7 +705,7 @@
                             </svg></a></div>
                     <div class="contact-top-content-phones"><a href="tel:+375298444405"><?php echo getMain()['phone_1'] ?></a><a
                             href="tel:+375448444405"><?php echo getMain()['phone_2'] ?></a></div>
-                    <div class="contact-top-content-button">
+                    <div class="contact-top-content-button call-button">
                         <div class="contact-top-content-button-blur"></div>
                         <div class="contact-top-content-button-but">Заказать звонок</div>
                     </div>
@@ -727,7 +727,9 @@
                         <div class="col-6 col-lg-3">
                             <div class="contact-bottom-left"> <img src="<?php echo get_stylesheet_directory_uri()?>/build/images/logo.svg" alt="">
                                 <p><?php echo getMain()['name'] ?></p>
-                                <p class="contact-bottom-left-reg"> <span>Свидетельство о регистрации</span></p>
+                                <p class="contact-bottom-left-reg">
+                                <!-- <span>Свидетельство о регистрации</span> -->
+                                </p>
                             </div>
                         </div>
                         <div class="col-6 col-lg-3">
@@ -748,7 +750,7 @@
                                     </div>
                                     <div class="contact-bottom-center-phone-text">
                                         <p>
-                                        <?php echo getMain()['phone_1'] ?><br><br><?php echo getMain()['phone_2'] ?></p>
+                                        <?php echo getMain()['phone_1'] ?><br><br class="mobile-show"><?php echo getMain()['phone_2'] ?></p>
                                     </div>
                                 </div>
                                 <div class="contact-bottom-center-social"><a href="<?php echo getMain()['instagramm_link'] ?>" target="_blank"

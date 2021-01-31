@@ -142,10 +142,14 @@
         }
         &-item {
             justify-content: center;
+            margin-bottom: 40px;
+            min-height: auto;
+            //background-image: url("./../images/border-mob.svg");
             &-border {
                 transform: rotate(90deg);
                 top: auto;
                 left: auto;
+                display: none;
             }
             &-num {
                 width: 34px;

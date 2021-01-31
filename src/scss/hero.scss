@@ -305,7 +305,13 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-
+            z-index: 99999;
+            background: rgba(51, 51, 51, 0.4);
+            transform: translateY(0);
+            transition: 0.3s ease-in-out;
+            &.hidden {
+                transform: translateY(-100%);
+            }
         }
         &-content {
             margin-bottom: 50px;

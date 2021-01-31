@@ -13,6 +13,7 @@ add_action( 'wp_enqueue_scripts', function () {
     wp_deregister_script( 'jquery' );
     wp_enqueue_script('jquery', B_JS_PATH . '/jquery.js');
     wp_enqueue_script('slick', B_JS_PATH . '/slick.min.js');
+    wp_enqueue_script('maskedinput', B_JS_PATH . '/jquery.maskedinput.min.js');
     wp_enqueue_script('main', B_JS_PATH . '/main.js');
 });
 

@@ -1,4 +1,6 @@
 
+
+
 function initSliders() {
     $(document).ready(function(){
         //hero block slider
@@ -77,6 +79,7 @@ function initSliders() {
 
 window.addEventListener('load', function () {
     siteNavigation();
+    let isMobile = document.body.clientWidth < 991
 });
 
 
@@ -105,6 +108,15 @@ function siteNavigation() {
             item.addEventListener('click', (e) => {
                 count = item.getAttribute('data-num');
                 window.dispatchEvent(changeCountEvent);
+                menuSection.classList.remove('open')
+            })
+        })
+    } else {
+        menuItems.forEach((item) => {
+            item.addEventListener('click', (e) => {
+                count = item.getAttribute('data-num');
+                window.dispatchEvent(changeCountEvent);
+                document.body.style.overflow = 'auto'
                 menuSection.classList.remove('open')
             })
         })
@@ -170,18 +182,117 @@ function siteNavigation() {
         let menuOpenButton = document.querySelectorAll('.hamburger');
         menuOpenButton.forEach((button) => {
             button.addEventListener('click', (e) => {
+                let openMenu = document.querySelector('.menu.open')
+                if(openMenu) {
+                    document.body.style.overflow = 'auto'
+                } else {
+                    document.body.style.overflow = 'hidden'
+                }
                 menuSection.classList.toggle('open')
             })
         })
     
     }
 
+    function orderCall () {
+        let buttons = document.querySelectorAll('.call-button')
+        let orderBlock = document.querySelector('.order-bot')
+        let isMobile = false
+        buttons.forEach((button) => {
+            button.addEventListener('click', (e) => {
+                isMobile = document.body.clientWidth > 991 ? false : true
+                e.preventDefault()
+                if(isMobile === true) {
+                    orderBlock.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                } else {
+                    count = 2
+                    window.dispatchEvent(changeCountEvent)
+                }
+            })
+        })
+    }
 
-    
-    
+    orderCall()
 }
 
+// Phone mask
+function addMask (selector) {
+    $(selector).mask("+375 (99) 999-99-99")
+}
+
+function formValidation () {
+    let form = document.querySelector('.wpcf7-form')
+    form.addEventListener('keydown', function(event) {
+        if(event.keyCode == 13) {
+            event.preventDefault();
+        }
+    });
+    let phoneInput = document.querySelector('.phone-input input')
+    let nameInput = document.querySelector('.name-input input')
+    let sendButton = document.querySelector('.submit-input input')
+    let phoneLength
+    sendButton.classList.add('disabled')
+    sendButton.setAttribute("disabled", "disabled")
+    phoneInput.addEventListener('unfocus', (e) => {
+        phoneLength = $('.phone-input input').mask().length
+        if (phoneLength === 9 && nameInput.value.length > 2) {
+            sendButton.classList.remove('disabled')
+        }
+    })
+    nameInput.addEventListener('input', (e) => {
+        phoneLength = $('.phone-input input').mask().length
+        if (phoneLength === 9 && nameInput.value.length > 2) {
+            sendButton.classList.remove('disabled')
+        }
+    })
+
+}
+
+function mobileHeaderHidden () {
+    let oldScroll = 0
+    let isMobile = document.body.clientWidth < 992
+    window.addEventListener('resize', () => {
+        isMobile = document.body.clientWidth < 992
+        if(isMobile)  {
+            menuHeaderBehavior()
+        }
+    })
+
+    function menuHeaderBehavior() {
+        let heroHeader = document.querySelector('.hero-header')
+        let heroHeaderHeight = heroHeader.clientHeight
+        window.addEventListener('scroll', () => {
+            let currentScroll = window.pageYOffset
+            if(currentScroll > oldScroll ) {
+                heroHeader.classList.add('hidden')
+                oldScroll = currentScroll
+            } else {
+                heroHeader.classList.remove('hidden')
+                oldScroll = currentScroll
+            }
+        })
+    }
+
+    menuHeaderBehavior()
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    initSliders()
+    mobileHeaderHidden()
+    // addMask('.phone-input input')
+    // formValidation()
+})
+
+// document.addEventListener('resize', () => {
+//    if(document.body.clientWidth > 991) {
+//        isMobile = false
+//    } else {
+//        isMobile = true
+//    }
+// })
 
 
-initSliders()
 
