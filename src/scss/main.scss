@@ -90,9 +90,9 @@ p {
     }
 }
 
-section {
-    transform: scale(0.5);
-}
+//section {
+//    transform: scale(0.5);
+//}
 
 h1 {
     font-family: Tenor Sans;
@@ -171,4 +171,53 @@ body {
   .mobile-show {
     display: block;
   }
+}
+
+@media(max-height: 880px ) {
+  body {
+    height: auto;
+    overflow: auto;
+  }
+  .body-wrapper {
+    height: auto;
+  }
+  .hamburger {
+    display: none;
+  }
+  section {
+    height: auto !important;
+    max-height: none !important;
+  }
+  .hero-scroll {
+    display: none;
+  }
+  .grid-counter {
+    display: none;
+  }
+  .hero {
+    padding-bottom: 50px;
+  }
+  .example {
+    padding-bottom: 50px;
+  }
+  .comment {
+    padding-bottom: 50px;
+  }
+  .contact {
+    &-top {
+      padding-top: 50px;
+      padding-bottom: 30px;
+      height: 57%;
+    }
+    &-center {
+      height: 17%;
+      &-images {
+        padding-bottom: 15px;
+      }
+    }
+    &-bottom {
+      height: 30%;
+    }
+  }
+
 }

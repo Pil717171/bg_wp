@@ -10,12 +10,10 @@ function initSliders() {
             slidesToShow: 2,
             prevArrow: document.querySelector('.hero-content-slider-buttons-prev'),
             nextArrow: document.querySelector('.hero-content-slider-buttons-next'),
-            infinite: false,
+            infinite: true,
             }
         );
         $('.hero-content-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
-            console.log(currentSlide);
-            console.log(slick.slideCount)
             if(currentSlide !== 0) {
                 document.querySelector('.hero-content-slider-buttons-prev').classList.add('active')
             } else {
@@ -78,9 +76,27 @@ function initSliders() {
 
 
 window.addEventListener('load', function () {
-    siteNavigation();
+    if (window.innerHeight > 880) {
+      siteNavigation();
+    } else {
+      callButtonToForm()
+    }
     let isMobile = document.body.clientWidth < 991
 });
+
+function callButtonToForm() {
+  const callButtons = document.querySelectorAll('.call-button')
+  const formBlock = document.querySelector('.order-bot')
+  const formBlockCoord = formBlock.getBoundingClientRect().top
+  callButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      window.scrollTo({
+        top: formBlockCoord,
+        behavior: "smooth"
+      })
+    })
+  })
+}
 
 
 

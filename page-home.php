@@ -66,10 +66,10 @@
                                             </a></div>
                                     </div>
                                 </div>
-                                <div class="col-lg-7 hero-button"><a class="call-button" href="#">
+                                <div class="col-lg-7 hero-button"><div class="call-button">
                                         <div class="hero-button-blur"></div>
                                         <div class="hero-button-button">Заказать звонок</div>
-                                    </a></div>
+                                    </div></div>
                             </div>
                         </div>
                     </div>
